@@ -2,44 +2,43 @@ package com.example.addressbookapp.controller;
 
 import com.example.addressbookapp.dto.AddressBookDTO;
 import com.example.addressbookapp.model.AddressBook;
+import com.example.addressbookapp.service.AddressBookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.List;
 
 @RestController
 @RequestMapping("/addressbook")
 public class AddressBookController {
 
-    private List<AddressBook> list = new ArrayList<>();
+    @Autowired
+    private AddressBookService service;
 
     @GetMapping
     public ResponseEntity<List<AddressBook>> getAll() {
-        return ResponseEntity.ok(list);
+        return ResponseEntity.ok(service.getAllContacts());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<AddressBook> getById(@PathVariable int id) {
-        return ResponseEntity.ok(list.get(id));
+        return ResponseEntity.ok(service.getContactById(id));
     }
 
     @PostMapping
     public ResponseEntity<AddressBook> add(@RequestBody AddressBookDTO dto) {
-        AddressBook obj = new AddressBook(list.size(), dto.name, dto.city, dto.state);
-        list.add(obj);
-        return ResponseEntity.ok(obj);
+        return ResponseEntity.ok(service.addContact(dto));
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<AddressBook> update(@PathVariable int id, @RequestBody AddressBookDTO dto) {
-        AddressBook obj = new AddressBook(id, dto.name, dto.city, dto.state);
-        list.set(id, obj);
-        return ResponseEntity.ok(obj);
+        return ResponseEntity.ok(service.updateContact(id, dto));
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> delete(@PathVariable int id) {
-        list.remove(id);
+        service.deleteContact(id);
         return ResponseEntity.ok("Deleted");
     }
 }
