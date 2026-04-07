@@ -1,7 +1,10 @@
 package com.example.addressbookapp.dto;
 
+import lombok.Data;
+
+@Data
 public class AddressBookDTO {
-    public String name;
-    public String city;
-    public String state;
+    private String name;
+    private String city;
+    private String state;
 }
