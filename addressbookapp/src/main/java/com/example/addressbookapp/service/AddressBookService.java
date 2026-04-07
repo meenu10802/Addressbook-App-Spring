@@ -6,44 +6,52 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class AddressBookService {
 
-    private List<AddressBook> list = new ArrayList<>();
+    private List<AddressBook> addressList = new ArrayList<>();
     private int idCounter = 1;
 
+    // GET ALL
     public List<AddressBook> getAllContacts() {
-        return list;
+        return addressList;
     }
 
+    // GET BY ID
     public AddressBook getContactById(int id) {
-        Optional<AddressBook> contact = list.stream()
-                .filter(c -> c.getId() == id)
-                .findFirst();
-
-        return contact.orElseThrow(() -> new RuntimeException("Contact not found"));
+        return addressList.stream()
+                .filter(contact -> contact.getId() == id)
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Contact not found"));
     }
 
+    // CREATE
     public AddressBook addContact(AddressBookDTO dto) {
-        AddressBook obj = new AddressBook(idCounter++, dto.name, dto.city, dto.state);
-        list.add(obj);
-        return obj;
+        AddressBook newContact = new AddressBook(
+                idCounter++,
+                dto.getName(),
+                dto.getCity(),
+                dto.getState()
+        );
+        addressList.add(newContact);
+        return newContact;
     }
 
+    // UPDATE
     public AddressBook updateContact(int id, AddressBookDTO dto) {
         AddressBook existing = getContactById(id);
 
-        existing.setName(dto.name);
-        existing.setCity(dto.city);
-        existing.setState(dto.state);
+        existing.setName(dto.getName());
+        existing.setCity(dto.getCity());
+        existing.setState(dto.getState());
 
         return existing;
     }
 
+    // DELETE
     public void deleteContact(int id) {
         AddressBook existing = getContactById(id);
-        list.remove(existing);
+        addressList.remove(existing);
     }
 }
