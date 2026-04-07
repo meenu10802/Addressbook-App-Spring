@@ -1,0 +1,41 @@
+2026-04-07T16:06:57.694+05:30  INFO 13792 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Starting AddressbookappApplication using Java 17.0.12 with PID 13792 (C:\Users\Saravana Kumar\Downloads\addressbookapp\addressbookapp\target\classes started by Saravana Kumar in C:\Users\Saravana Kumar\Downloads\addressbookapp)
+2026-04-07T16:06:57.697+05:30 DEBUG 13792 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-04-07T16:06:57.697+05:30  INFO 13792 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : The following 1 profile is active: "dev"
+2026-04-07T16:06:58.622+05:30  INFO 13792 --- [addressbookapp] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-07T16:06:58.638+05:30  INFO 13792 --- [addressbookapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-07T16:06:58.638+05:30  INFO 13792 --- [addressbookapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-07T16:06:58.696+05:30  INFO 13792 --- [addressbookapp] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 955 ms
+2026-04-07T16:06:59.118+05:30  INFO 13792 --- [addressbookapp] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-07T16:06:59.123+05:30  INFO 13792 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Started AddressbookappApplication in 1.977 seconds (process running for 2.67)
+2026-04-07T16:07:48.513+05:30  INFO 13792 --- [addressbookapp] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-07T16:07:48.646+05:30  INFO 13792 --- [addressbookapp] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-07T16:07:56.849+05:30  INFO 8996 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Starting AddressbookappApplication using Java 17.0.12 with PID 8996 (C:\Users\Saravana Kumar\Downloads\addressbookapp\addressbookapp\target\classes started by Saravana Kumar in C:\Users\Saravana Kumar\Downloads\addressbookapp)
+2026-04-07T16:07:56.856+05:30 DEBUG 8996 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-04-07T16:07:56.857+05:30  INFO 8996 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : The following 1 profile is active: "dev"
+2026-04-07T16:07:57.575+05:30  INFO 8996 --- [addressbookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-07T16:07:57.584+05:30  INFO 8996 --- [addressbookapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-07T16:07:57.584+05:30  INFO 8996 --- [addressbookapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-07T16:07:57.620+05:30  INFO 8996 --- [addressbookapp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-07T16:07:57.620+05:30  INFO 8996 --- [addressbookapp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 725 ms
+2026-04-07T16:07:57.871+05:30  INFO 8996 --- [addressbookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-07T16:07:57.877+05:30  INFO 8996 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Started AddressbookappApplication in 1.414 seconds (process running for 2.01)
+2026-04-07T16:10:22.648+05:30  INFO 18316 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Starting AddressbookappApplication using Java 17.0.12 with PID 18316 (C:\Users\Saravana Kumar\Downloads\addressbookapp\addressbookapp\target\classes started by Saravana Kumar in C:\Users\Saravana Kumar\Downloads\addressbookapp)
+2026-04-07T16:10:22.649+05:30 DEBUG 18316 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-04-07T16:10:22.656+05:30  INFO 18316 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : The following 1 profile is active: "dev"
+2026-04-07T16:10:23.387+05:30  INFO 18316 --- [addressbookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-07T16:10:23.396+05:30  INFO 18316 --- [addressbookapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-07T16:10:23.397+05:30  INFO 18316 --- [addressbookapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-07T16:10:23.434+05:30  INFO 18316 --- [addressbookapp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-07T16:10:23.434+05:30  INFO 18316 --- [addressbookapp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 742 ms
+2026-04-07T16:10:23.683+05:30  INFO 18316 --- [addressbookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-07T16:10:23.688+05:30  INFO 18316 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Started AddressbookappApplication in 1.501 seconds (process running for 2.029)
+2026-04-07T16:14:26.291+05:30  INFO 18864 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Starting AddressbookappApplication using Java 17.0.12 with PID 18864 (C:\Users\Saravana Kumar\Downloads\addressbookapp\addressbookapp\target\classes started by Saravana Kumar in C:\Users\Saravana Kumar\Downloads\addressbookapp)
+2026-04-07T16:14:26.294+05:30 DEBUG 18864 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-04-07T16:14:26.294+05:30  INFO 18864 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : The following 1 profile is active: "dev"
+2026-04-07T16:14:27.108+05:30  INFO 18864 --- [addressbookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-07T16:14:27.117+05:30  INFO 18864 --- [addressbookapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-07T16:14:27.117+05:30  INFO 18864 --- [addressbookapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-07T16:14:27.159+05:30  INFO 18864 --- [addressbookapp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-07T16:14:27.160+05:30  INFO 18864 --- [addressbookapp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 822 ms
+2026-04-07T16:14:27.455+05:30  INFO 18864 --- [addressbookapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-07T16:14:27.461+05:30  INFO 18864 --- [addressbookapp] [main] c.e.a.AddressbookappApplication          : Started AddressbookappApplication in 1.622 seconds (process running for 2.23)
